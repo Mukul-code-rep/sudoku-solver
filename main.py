@@ -74,7 +74,7 @@ if __name__ == "__main__":
         play_board.append([board[i][j] for j in range(len(board[i]))])
     print("Welcome to sudoku!")
     print("Here's your puzzle.\n")
-    print_board(board)
+    print_board(play_board)
     res = solve(board)
     if not res:
         print("This is not solvable.")
